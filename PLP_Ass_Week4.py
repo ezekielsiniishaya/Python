@@ -11,6 +11,6 @@ class Person:
     def introduce(self):
         print(f"This is {self.name}, {self.age} years old {self.gender}.")
 
-
+# Creating an instance of the Person class with attributes
 person = Person("Ezekiel", 24, "male")
 person.introduce()
