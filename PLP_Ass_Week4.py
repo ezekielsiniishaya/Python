@@ -1,4 +1,4 @@
-#PLP Assignment learning about OPP in python\
+#PLP Assignment learning about OPP in python
 
 #Creating a python class
 class Person:

@@ -1,0 +1,8 @@
+File handling in Python is pretty straightforward
+I can create, write to and even delete any file I want
+All I have to do is 
+	1. use the open() function
+	2. More about this in the future.
+As I was saying earlier about file handling in Python.
+	3. Chose to either open the file for reading, writing, appending or a combination of any
+	4. Use the goodies that come with the open() function like readline() and write() functions.
