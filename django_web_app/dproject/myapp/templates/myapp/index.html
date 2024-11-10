@@ -1,0 +1,19 @@
+<!-- myapp/templates/myapp/add_book.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Django App</title>
+</head>
+
+<body>
+    <h1>My first Django App</h1>
+    <p>Welcome to my first Django App</p>
+    <p>Click <a href="{% url 'book_list' %}">here</a> to view books</p>
+    <p>Click <a href="{% url 'add_book' %}">here</a> to add a new book</p>
+    <p>Click <a href="{% url 'create_user' %}">here</a> to create a user</p>
+    <p>Click <a href="{% url 'user_profile' %}">here</a> to view users</p>
+</body>
+
+</html>

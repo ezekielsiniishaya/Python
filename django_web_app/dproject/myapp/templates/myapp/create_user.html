@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User Account</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Account</button>
+    </form>
+    <p>Click <a href="{% url 'user_profile' %}">here</a> to view users</p>
+    <p><a href="{% url 'home' %}">Go back home</a></p>
+</body>
+
+</html>

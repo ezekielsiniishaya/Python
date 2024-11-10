@@ -1,0 +1,26 @@
+<!-- myapp/templates/myapp/book_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+
+<body>
+    <h1>Book List</h1>
+    <ul>
+        {% for book in books %}
+        <li>
+            <strong>{{ book.title }}</strong> by {{ book.author.name }}<br>
+            {{ book.description }}<br>{{book.publication_date}}<br>{{book.price}}
+        </li>
+        {% empty %}
+        <li>No books available.</li>
+        {% endfor %}
+    </ul>
+    <p>Click <a href="{% url 'add_book' %}">here</a> to add a new book</p>
+    <p><a href="{% url 'home' %}">Go back home</a></p>
+</body>
+
+</html>
