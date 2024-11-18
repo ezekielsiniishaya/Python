@@ -1,7 +1,6 @@
 # myapp/forms.py
 from django import forms
-from .models import Book
-from .models import CustomUser
+from .models import CustomUser, Book
 
 class BookForm(forms.ModelForm):
     class Meta:
@@ -12,3 +11,4 @@ class UserForm(forms.ModelForm):
     class Meta:
         model = CustomUser
         fields = ['name', 'username', 'email', 'bio']
+Book = Book.objects.all()
